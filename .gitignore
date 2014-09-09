@@ -61,7 +61,7 @@ npm-debug.log
 .env
 
 # Build
-*.css
+build-*.css
 build-*.js
 assets/js/build/
 vendor

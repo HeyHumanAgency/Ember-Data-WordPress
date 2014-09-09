@@ -1,0 +1,15 @@
+body {
+	width: 80%;
+	max-width: 1000px;
+	margin: 1rem auto 0;
+}
+
+a,
+a:visited {
+	color: #3498db;
+	text-decoration: none;
+}
+
+.hentry {
+	border-bottom: 1px solid #bdc3c7;
+}
