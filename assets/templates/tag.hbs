@@ -1,0 +1,7 @@
+<h2>{{term.count}} posts tagged {{term.name}}</h2>
+
+<section class="hfeed">
+	{{#each}}
+		{{single-post content=this}}
+	{{/each}}
+</section>

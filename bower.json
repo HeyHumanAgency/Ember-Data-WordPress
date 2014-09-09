@@ -1,0 +1,22 @@
+{
+  "name": "ember-data-wp",
+  "version": "0.1.0",
+  "authors": [
+    "Jono Warren <jonathan.warren@heyhuman.com>"
+  ],
+  "description": "Ember Data WordPress Adapter",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ember": "~1.7.0",
+    "ember-data": "1.0.0-beta.9+canary",
+    "jquery": "~1.11"
+  }
+}

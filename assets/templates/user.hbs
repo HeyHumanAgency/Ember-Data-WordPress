@@ -1,0 +1,10 @@
+<div class="author">
+	<h2>{{author.name}}</h2>
+	<img {{bind-attr src="author.avatar" alt="author.name"}}>
+</div>
+
+<section class="hfeed">
+	{{#each}}
+		{{single-post content=this}}
+	{{/each}}
+</section>

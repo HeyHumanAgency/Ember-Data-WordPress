@@ -1,0 +1,34 @@
+<article class="hentry">
+	<header>
+		<h1 class="entry-title">
+			{{#link-to type slug}}{{title}}{{/link-to}}
+		</h1>
+		<time class="published">{{date}}</time>
+		<p class="author">By {{#link-to 'user' author.slug}}{{author.name}}{{/link-to}}</p>
+	</header>
+	<div class="entry-content">{{{content}}}</div>
+	<div class="taxonomies">
+		{{#if tags}}
+			<div class="tax-tags">
+				<p>
+					Tagged
+					<ul>
+						{{#each tags}}
+							<li>{{#link-to 'tag' slug}}{{name}}{{/link-to}}</li>
+						{{/each}}
+					</ul>
+				</p>
+			</div>
+		{{/if}}
+		{{#if categories}}
+			<div class="tax-cats">
+				Categories:
+				<ul>
+					{{#each categories}}
+						<li>{{#link-to 'category' slug}}{{name}}{{/link-to}}</li>
+					{{/each}}
+				</ul>
+			</div>
+		{{/if}}
+	</div>
+</article>
